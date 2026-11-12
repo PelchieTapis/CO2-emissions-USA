@@ -17,13 +17,7 @@ How have total annual fossil fuel CO2 emissions and per-capita CO2 emissions tre
 * Clone or Download the Repository:
 Ensure the project folder structure remains intact:
 CO2-emissions-USA/
-├── data/
-├── figures/
-├── results/
-├── scripts/
-│   └── analyze_co2.R
-├── .gitignore
-└── README.md
+source("scripts/analyze_co2.R")
 * Open the Project in RStudio:
 Launch RStudio and set your working directory to the project root folder.
 * Execute the Script:
@@ -54,9 +48,11 @@ Summary Table Overview
 <img width="1440" height="840" alt="image" src="https://github.com/user-attachments/assets/646d4aff-690d-47c0-85d7-ede0255a782a" />
 
 # Interpretation
-Between 1990 and 2024, United States CO2 emissions demonstrated distinct structural shifts reflecting economic transitions, policy changes, and technological advances in energy production. Total annual CO2 emissions expanded steadily throughout the 1990s, reaching a peak in the mid-2000s near 6,000 million tonnes. Following this peak, total emissions entered a downward trajectory driven largely by the sharp transition from coal-fired electricity generation toward natural gas and renewable energy sources such as wind and solar.
+Between 1990 and 2024, carbon dioxide emissions in the United States underwent a marked shift from continuous growth to a sustained trajectory of decarbonization. From 1990 through the mid-2000s, total annual emissions expanded steadily, driven by robust macroeconomic growth, expansion of heavy industrial manufacturing, and widespread reliance on coal-fired electricity generation. Emissions peaked around 2005–2007 at over 6,100 million tonnes per year.
 
-Per-capita emissions reached their peak earlier and declined significantly faster than total emissions, decreasing from over 20 tonnes per person in 1990 to under 14 tonnes per person by 2024. This divergence indicates a structural decoupling of economic and population growth from direct carbon intensity. Sharp downward spikes in total emissions and annual growth rates correspond directly to major external disruptions, including the 2008 global financial crisis and the 2020 COVID-19 pandemic, both of which caused temporary contractions in industrial production and transportation demand. Despite post-crisis economic recoveries, emissions failed to return to their former peaks, confirming a long-term transition toward a less carbon-intensive energy grid.
+Following this peak, the United States entered a period of structural decline in overall carbon intensity. A primary driver was the domestic "shale gas revolution," which significantly reduced the price of natural gas relative to coal. Power utilities rapidly decommissioned coal-fired power plants in favor of cleaner natural gas and rapidly expanding renewable sources such as wind and solar photovoltaics. Consequently, emissions dropped precipitously over the following decade while real economic output continued to expand—a phenomenon known as absolute decoupling.
+
+The historical timeline also highlights notable macro-economic shocks. The 2008 global financial crisis and the 2020 COVID-19 pandemic caused substantial temporary contractions in industrial production and transportation demand, resulting in sharp single-year drops in emissions. Although post-pandemic economic recovery caused a slight rebound in 2021, per-capita emissions continued their long-term downward trend, reaching approximately 14 tonnes per person by 2024—a reduction of over 30% from 1990 levels. Overall, the data illustrates that energy efficiency improvements, fuel switching in power generation, and structural economic shifts toward service industries have successfully curbed US carbon emissions over the past two decades.
 
 # Limitations
 * Scope of Emissions: The dataset focuses primarily on fossil fuel combustion and industrial land-use emissions; it does not fully encompass short-lived non-CO2 greenhouse gases like methane ($CH_4$) or nitrous oxide ($N_2O$).
